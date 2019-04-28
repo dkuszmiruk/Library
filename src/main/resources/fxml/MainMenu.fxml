@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1060.0" xmlns="http://javafx.com/javafx/10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.put.poznan.Controller.GUIControllers.MainMenuController">
+   <children>
+      <fx:include fx:id="topMenu" source="TopMenu.fxml" AnchorPane.leftAnchor="121.6" AnchorPane.rightAnchor="121.6" AnchorPane.topAnchor="15.0" />
+      <Pane fx:id="mainPane" layoutX="225.0" layoutY="238.0" prefHeight="560.0" prefWidth="1040.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
