@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.put.poznan.Controller.GUIControllers.BookCopiesController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="813.0" layoutY="210.0" prefHeight="250.0" prefWidth="186.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addBookCopy" prefHeight="65.0" prefWidth="146.0" text="Dodaj" />
+            <Button mnemonicParsing="false" onAction="#modifyBookCopy" prefHeight="65.0" prefWidth="146.0" text="Modyfikuj" />
+            <Button mnemonicParsing="false" onAction="#deleteBookCopy" prefHeight="65.0" prefWidth="146.0" text="Usuń" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="bookCopiesTable" layoutX="70.0" layoutY="124.0" prefHeight="410.0" prefWidth="724.0">
+        <columns>
+          <TableColumn fx:id="bookCopyId" prefWidth="191.2000274658203" text="Identyfikator egzemplarza" />
+          <TableColumn fx:id="section" prefWidth="69.60003662109375" text="Dział" />
+            <TableColumn fx:id="book" prefWidth="296.800048828125" text="Książka (ISBN,tytuł)" />
+            <TableColumn fx:id="howLong" prefWidth="165.59991455078125" text="Na ile dni wypożyczany" />
+        </columns>
+      </TableView>
+      <TextField fx:id="findTextField" layoutX="170.0" layoutY="52.0" prefHeight="35.0" prefWidth="189.0" />
+      <Button layoutX="392.0" layoutY="52.0" mnemonicParsing="false" onAction="#findBookCopies" prefHeight="35.0" prefWidth="97.0" text="Wyszukaj" />
+   </children>
+</Pane>
