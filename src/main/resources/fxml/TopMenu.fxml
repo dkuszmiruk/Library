@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="15.0" xmlns="http://javafx.com/javafx/10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.put.poznan.Controller.GUIControllers.TopMenuController">
+   <children>
+      <ToggleButton fx:id="menuReaders" mnemonicParsing="false" onAction="#openReaders" prefHeight="70.0" prefWidth="120.0" text="Czytelnicy">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleButtons" />
+         </toggleGroup>
+      </ToggleButton>
+      <ToggleButton fx:id="menuBookCopies" mnemonicParsing="false" onAction="#openBookCopies" prefHeight="70.0" prefWidth="120.0" text="Egzemplarze" toggleGroup="$toggleButtons" />
+      <ToggleButton fx:id="menuLoans" mnemonicParsing="false" onAction="#openLoans" prefHeight="70.0" prefWidth="120.0" text="Wypożyczenia" toggleGroup="$toggleButtons" />
+      <ToggleButton fx:id="menuBooks" mnemonicParsing="false" onAction="#openBooks" prefHeight="70.0" prefWidth="120.0" text="Książki" toggleGroup="$toggleButtons" />
+      <ToggleButton fx:id="menuAuthors" mnemonicParsing="false" onAction="#openAuthors" prefHeight="70.0" prefWidth="120.0" text="Autorzy" toggleGroup="$toggleButtons" />
+      <ToggleButton fx:id="menuLibrarians" mnemonicParsing="false" onAction="#openLibrarians" prefHeight="70.0" prefWidth="120.0" text="Bibliotekarze" toggleGroup="$toggleButtons" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>
