@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/10" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.put.poznan.Controller.GUIControllers.AuthorsController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="797.0" layoutY="201.0" prefHeight="250.0" prefWidth="186.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addAuthor" prefHeight="65.0" prefWidth="146.0" text="Dodaj" />
+            <Button mnemonicParsing="false" onAction="#modifyAuthor" prefHeight="65.0" prefWidth="146.0" text="Modyfikuj" />
+            <Button mnemonicParsing="false" onAction="#deleteAuthor" prefHeight="65.0" prefWidth="146.0" text="Usuń" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="authorTable" layoutX="85.0" layoutY="121.0" prefHeight="410.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="firstName" prefWidth="102.4000244140625" text="Imię" />
+          <TableColumn fx:id="lastName" prefWidth="92.79998779296875" text="Nazwisko" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="findTextField" layoutX="225.0" layoutY="47.0" prefHeight="35.0" prefWidth="189.0" />
+      <Button layoutX="460.0" layoutY="47.0" mnemonicParsing="false" onAction="#findAuthor" prefHeight="35.0" prefWidth="97.0" text="Wyszukaj" />
+   </children>
+</Pane>
